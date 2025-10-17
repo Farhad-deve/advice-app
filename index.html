@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Connection to style sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Connection to javascript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body class="mar-0">
+
+
+  <div class="bg-blue950 d-flex flex-center wrapper">
+    <div class="ad-container d-flex flex-center flex-column gap-1-5r text-center">
+      <p class="advice color-green300 let-space-2 mar-0">ADVICE <span id="advice-id"></span></p>
+      <h2 class="color-blue200 line-height-1-5" id="advice-text"></h2>
+      <picture>
+        <!-- Tablet or Desktop -->
+        <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 600px)">
+
+        <!-- Mobile -->
+        <source srcset="images/pattern-divider-mobile.svg" media="(max-width: 600px)">
+
+        <img src="images/pattern-divider-desktop.svg" alt="pattern-divider">
+      </picture>
+
+      <button class="advice-btn d-flex flex-center bg-green300" id="advice-btn">
+        <img src="images/icon-dice.svg" alt="icon-dice">
+      </button>
+    </div>
+  </div>
+
+
+  <div class="attribution color-blue200">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Farhad-deve" target="_blank">Farhad</a>.
+  </div>
+</body>
+
+</html>
