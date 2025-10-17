@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+.attribution a { color: #3e52a3; }
+
+:root {
+    /* Colors */
+    --blue200: #cee3e9ff;
+    --green300: #52ffa8ff;
+    --blue600: #4e5d73ff;
+    --blue900: #323a49ff;
+    --blue950: #1f2632ff;
+
+    /* Font weights */
+    --font-w-800: 800;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+/* Reusable classes */
+
+/* Flex */
+.d-flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Gap classes */
+
+.gap-1-5r {
+    gap: 1.5rem;
+}
+
+/* Typography classes */
+
+.font-w-800 {
+    font-weight: var(--font-w-800);
+}
+
+.line-height-1-5 {
+    line-height: 1.5;
+}
+
+.let-space-2 {
+    letter-spacing: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Colors */
+
+.color-blue200 {
+    color: var(--blue200);
+}
+
+.color-green300 {
+    color: var(--green300);
+}
+
+/* Background colors */
+
+.bg-blue900 {
+    background-color: var(--blue900);
+}
+
+.bg-blue950 {
+    background-color: var(--blue950);
+}
+
+.bg-green300 {
+    background-color: var(--green300);
+}
+
+/* Margin classes */
+
+.mar-0 {
+    margin: 0;
+}
+
+/* -------------------- */
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    height: 100dvh;
+}
+.ad-container {
+    position: relative;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: var(--blue900);
+}
+
+.advice-btn {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.advice-btn:hover {
+    box-shadow: 0 0 1rem var(--green300);
+}
+
+@media (max-width: 480px) {
+    .ad-container {
+        padding: 1rem;
+        width: 90%;
+    }
+    
+}
